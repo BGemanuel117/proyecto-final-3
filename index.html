@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Proyecto Escolar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f0f0f0;
+        }
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+        table {
+            width: 100%;
+            background-color: #0b5394; /* Azul oscuro */
+            color: #fff;
+            border-collapse: collapse; /* Colapsar los bordes de la tabla */
+        }
+        th, td {
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background-color: #003366; /* Azul más oscuro para las celdas de encabezado */
+        }
+        tr:hover {
+            background-color: #003366; /* Cambiar color de fondo al pasar el cursor */
+        }
+        a {
+            color: #fff;
+            text-decoration: none;
+        }
+        footer {
+            background-color: #333;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: fixed;
+            width: 100%;
+            bottom: 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bienvenido a Mi Proyecto Escolar</h1>
+    </header>
+    <table>
+        <tr>
+            <th>Menú</th>
+        </tr>
+        <tr>
+            <td><a href="#" onclick="agregarRegistro()">Agregar un nuevo registro</a></td>
+        </tr>
+        <tr>
+            <td><a href="#" onclick="mostrarRegistros()">Mostrar todos los registros</a></td>
+        </tr>
+        <tr>
+            <td><a href="#" onclick="modificarRegistro()">Modificar un registro</a></td>
+        </tr>
+        <tr>
+            <td><a href="#" onclick="eliminarRegistro()">Eliminar un registro</a></td>
+        </tr>
+        <tr>
+            <td><a href="#">Salir</a></td>
+        </tr>
+    </table>
+    <main>
+        <div id="output"></div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Mi Proyecto Escolar</p>
+    </footer>
+
+    <script>
+        function agregarRegistro() {
+            // Código JavaScript para agregar un nuevo registro
+            document.getElementById("output").innerText = "Agregando un nuevo registro...";
+        }
+
+        function mostrarRegistros() {
+            // Código JavaScript para mostrar todos los registros
+            document.getElementById("output").innerText = "Mostrando todos los registros...";
+        }
+
+        function modificarRegistro() {
+            // Código JavaScript para modificar un registro
+            document.getElementById("output").innerText = "Modificando un registro...";
+        }
+
+        function eliminarRegistro() {
+            // Código JavaScript para eliminar un registro
+            document.getElementById("output").innerText = "Eliminando un registro...";
+        }
+    </script>
+</body>
+</html>
